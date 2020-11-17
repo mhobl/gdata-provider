@@ -8,7 +8,7 @@ async function migrate() {
   if (legacyprefs) {
     console.log("[gdata-provider] Migrating legacy prefs", legacyprefs);
     await messenger.storage.local.set(legacyprefs);
-    await messenger.gdata.purgeLegacyPrefs();
+    //await messenger.gdata.purgeLegacyPrefs();
   }
 }
 
